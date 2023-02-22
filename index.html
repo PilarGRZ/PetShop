@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="/CSS/animations.css" rel="stylesheet">
+   
+   <link href="/img/logito.jpg" rel="icon">
+    <title>Pet Shop</title>
+    <!-- JavaScript Bundle with Popper -->
+    <link href="/CSS/styles.css" rel="stylesheet">
+    <link href="/CSS/responsive.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2657d459f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="header">
+
+ <div id="row">
+
+        <div id="logo">
+           <a href="/index.html"> <img src="/img/1.jpg" alt="pet"></a>
+        </div>
+ 
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Productos <span>▼</span></a>
+                        <ul>
+                            <li>
+                                <a href="#">Perros <span>►</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="perrosComida.html">Comida</a>
+                                    </li>
+                                    <li>
+                                        <a href="perrosRopa.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a href="perrosCamas.html">Camas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/perrosJuguetes.html">Juguetes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Gatos <span>►</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/gatosComida.html">Comida</a>
+                                    </li>
+                                    <li>
+                                        <a href="/gatosArena.html">Arenas</a>
+                                    </li>
+                                    <li>
+                                        <a href="/gastosRascador.html">Rascadores</a>
+                                    </li>
+                                    <li>
+                                        <a href="/gatosAccesorios.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="carro">
+
+                <ul>
+                    <li class="submenu">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="contadorProductos">0</p>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+
+                                
+                            </table>
+                            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                            <button><a href="#" id="vaciar-carrito">Vaciar Carrito</a></button>
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="search">
+
+                
+                <input type="text" placeholder="Buscar...">
+                 <button aria-label="buscar" class="btnBuscar"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                
+        </div>
+        </div>
+
+
+    </header>
+ 
+
+
+
+    <div id="banner">
+        <img src="/img/perro12.png" alt="banner">
+    </div>
+
+    <div id="anuncio">
+        <div class="row">
+            <p>Compra Online productos para tu mascota
+            </p>
+        </div>
+    </div>
+
+    <div id="barra">
+
+        <div class="servicio">
+            <div class="icon">
+                <img src="/img/carritoenvio.png" alt="envio">
+            </div>
+
+            <div class="texto">
+                <h4>Envio Gratuito</h4>
+                <p>En pedidos superiores a $200.000</p>
+            </div>
+
+        </div>
+
+        <div class="servicio">
+            <div class="icon">
+                <img src="/img/pagocontarjeta.png" alt="tarjeta">
+            </div>
+
+            <div class="texto">
+                <h4>Pago con tarjeta</h4>
+                <p>Metodo de pago seguro</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="servicio">
+            <div class="icon">
+                <img src="/img/regalo.png" alt="regalo">
+            </div>
+            <div class="texto">
+                <h4>Preparamos tus regalos</h4>
+                <p>Compra tus regalos para tus mascotas</p>
+            </div>
+
+        </div>
+    </div>
+
+ 
+
+    <section class="perrosygatos">
+
+        <h2>¡Para los que ladran y mueven la cola!</h2>
+
+
+        <div class="perros">
+
+            
+            
+            <div class="accesorios">
+                <a href="/perrosComida.html">
+                <div class="imge">
+                  <img src="/img/comida para perros.webp" alt="comidaPerros">
+                </div>
+                <div class="titulo">
+                    <h3>Comida</h3>
+                </div>
+
+                <div class="texto">
+                    <p>Alimento extraordinario para mascotas extraordinarias</p>
+                </div>
+            </a> 
+            </div>
+
+            <div class="accesorios">
+                <a href="/perrosRopa.html">
+                <div class="imge">
+                    <img src="/img/perros_ropa1.jpg" alt="ropaPerros">
+                </div>
+                <div class="titulo">
+                    <h3>Ropa</h3>
+                </div>
+                <div class="texto">
+                    <p>Aquí encontrarás el mejor look para tu mascota</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="accesorios">
+                <a href="/perrosCamas.html">
+                <div class="imge">
+                   <img src="/img/camaperro.jpg" alt="camasPerros">
+                </div>
+                <div class="titulo">
+                    <h3>Camas</h3>
+                </div>
+                <div class="texto">
+                    <p>Las camas más originales para el dormir de tu perro</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="accesorios">
+                <a href="/perrosJuguetes.html">
+                <div class="imge">
+                    <img src="/img/juguetes perros.jpg" alt="juguetesPerros">
+                </div>
+                <div class="titulo">
+                    <h3>Juguetes</h3>
+                </div>
+                <div class="texto">
+                    <p>Cientos de productos para entrenerlo</p>
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <h2>¡Para los que ronronean felicidad!</h2>
+      
+   
+        <div class="gatos">
+
+               <div class="accesorios">
+                <a href="/gatosComida.html">
+                <div class="imge">
+                  <img src="/img/comidagatos.jpg" alt="comidaGatos">
+                </div>
+                <div class="titulo">
+                    <h3>Comida</h3>
+                </div>
+
+                <div class="texto">
+                    <p>La mejor comida para gatos del mercado</p>
+                </div>
+            </a> 
+            </div>
+      
+
+            <div class="accesorios">
+
+                <a href="/gatosArena.html">
+                <div class="imge">
+                   <img src="/img/caja de arena.jpg" alt="arena">
+                </div>
+                <div class="titulo">
+                    <h3>Arena para gatos</h3>
+                </div>
+                <div class="texto">
+                    <p>Las mejores ofertas de arena para gatos</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="accesorios">
+                <a href="/gastosRascador.html">
+                <div class="imge">
+                    <img src="/img/gimnasio-gato-garritas-4.webp" alt="gimnasios">
+                </div>
+                <div class="titulo">
+                    <h3>Rascadores</h3>
+                </div>
+                <div class="texto">
+                    <p>Compra rascadores, arboles trepadores y Túneles para Gatos</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="accesorios">
+                <a href="/gatosAccesorios.html">
+                <div class="imge">
+                   <img src="/img/maletadegato.jpg" alt="accesorios">
+                </div>
+                <div class="titulo">
+                    <h3>Accesorios</h3>
+                </div>
+                <div class="texto">
+                    <p>Juguetes, ropa y todo tipo de ccesorios para tu mascota</p>
+                </div>
+            </a>
+            </div>
+        </div>
+
+
+      
+        <h2 class="ocultar">Los más buscados para perros</h2>
+
+        <div class="listaProductos">
+     
+         <section id ="masVendidosPerros">
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productoperro1.webp" alt="producto1">
+        </div>
+            <div class="info-card">
+                <p>Alimento perro DOG SHOW adultos medianos y grandes carne y pollo 15 kg</p>
+                </div>
+
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                    <span>$</span><p>31.990</p>
+            </div>
+                <button class="btn" name="agregar" data-id="1"> Agregar al carrito</button>
+            </a>
+            </div>
+     
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productoperro2.webp" alt="producto2">
+            </div>  
+            <div class="info-card">
+                <p> Cama mascota cic pet dreams acolchada large</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>67.990</p>
+            </div> 
+            <button class="btn" name="agregar" data-id="2"> Agregar al carrito</button>
+            </a>
+            
+        </div>
+
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productoperro3.jpg" alt="producto3">
+            </div>
+            <div class="info-card">
+                <p> Alimento de perros 18 kg plus carne y avena 100% natural</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>38.990</p>
+            </div>
+            <button class="btn" name="agregar" data-id="3"> Agregar al carrito</button>
+        </a>
+            
+        </div>
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productoperro4.jpg" alt="producto1">
+            </div>
+            <div class="info-card">
+                <p>Alimento perro master dog adulto carne 15 kg</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+                </div>
+                <div class="precio">
+                    <span>$</span><p>22.990</p>
+            </div>
+            <button class="btn" name="agregar" data-id="4"> Agregar al carrito</button>
+        </a>
+       
+    </div>
+  
+
+         </section>
+
+        
+        
+        
+
+        
+        
+        <h2 class="ocultar">Los más buscados para gatos</h2>
+
+        <section id ="masVendidosGatos">
+
+            <div class="card">
+                <a href="#">
+                <div class="imge">
+                <img src="/img/producto1.webp" alt="producto2">
+                </div>
+                <div class="info-card">
+                    <p>Cuido mi ringo 1000G</p>
+                </div>
+                <div class="calificacion">
+                    <img src="/img/estrellas.png" alt="estrellas">
+                </div>
+                <div class="precio">
+                    <span>$</span><p>9.500</p>
+                </div>
+                    <button class="btn" name="agregar" data-id="5"> Agregar al carrito</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="#">
+                    <div class="imge">
+                <img src="/img/producto2.jpg" alt="producto2">
+                    </div>
+                <div class="info-card">
+                    <p>Nutricence original 2.27KG</p>
+                    
+                </div>
+                <div class="calificacion">
+                    <img src="/img/estrellas.png" alt="estrellas">
+                </div>
+                <div class="precio">
+                    <span>$</span><p>27.990</p>
+                </div>
+                <button class="btn" name="agregar" data-id="6"> Agregar al carrito</button>
+                </a>
+                </div>
+            
+
+
+            <div class="card">
+                <a href="#">
+                    <div class="imge">
+                <img src="/img/producto3.jpg" alt="producto2">
+            </div>
+                <div class="info-card">
+                    <p>Comida humeda para gatos en deteste royal canin</p>
+                </div>
+                <div class="calificacion">
+                    <img src="/img/estrellas.png" alt="estrellas">
+                </div>
+                <div class="precio">
+                    <span>$</span><p>20.510</p>
+                </div>
+                <button class="btn" name="agregar" data-id="7"> Agregar al carrito</button>
+                </a>
+                </div>
+            
+
+            <div class="card">
+                <a href="#">
+                    <div class="imge">
+                <img src="/img/producto4.png" alt="producto2">
+                    </div>
+                <div class="info-card">
+                    <p>snacks mini pretzel con pollo - trixie</p>
+                </div>
+                <div class="calificacion">
+                    <img src="/img/estrellas.png" alt="estrellas">
+                </div>
+                <div class="precio">
+                    <span>$</span><p>10.360</p>
+                </div>
+                <button class="btn" name="agregar" data-id="8"> Agregar al carrito</button>
+                </a>
+            </div>
+
+        </div>
+        
+       
+        </section>
+  
+ 
+    </section>
+
+
+
+  
+
+
+<footer id="footer">
+    <div class="informacion">
+
+    <div class="informacionGeneral">
+       <h3>INFORMACIÓN GENERAL</h3>
+
+       <ul>
+        <li>
+            <a href="#">Preguntas frecuentes</a>
+        </li>
+        <li>
+            <a href="#">Derecho a retracto</a>
+        </li>
+        <li>
+            <a href="#">Terminos del servicio</a>
+        </li>
+        <li>
+            <a href="#">PQRS</a>
+        </li>
+        <li>
+            <a href="#">Politica de reembolso</a>
+        </li>
+       </ul>
+    </div>
+
+    <div class="location">
+
+        <h3>ESTAMOS LOCALIZADOS EN:</h3>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7005331727632!2d-74.10410758595617!3d4.647403943413172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b954c7ea505%3A0xd28c94814b1d1633!2sCentro%20Comercial%20Gran%20Estaci%C3%B3n!5e0!3m2!1ses!2sco!4v1672250490832!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="social">
+
+        <h3>SÌGUENOS...</h3>
+
+        <div class="redes">
+  
+            <a target="_blank" href="https://www.facebook.com" title="Facebook">
+            <i class="fa-brands fa-facebook"></i></a>
+
+            <a target="_blank" href="https://www.twitter.com" title="twitter">
+                <i class="fa-brands fa-twitter"></i></a>
+
+                <a target="_blank" href="https://www.instagram.com" title="instagram">
+                    <i class="fa-brands fa-instagram"></i></a>
+
+                    <a target="_blank" href="https://www.youtube.com" title="youtube">
+                        <i class="fa-brands fa-youtube"></i></a>
+          
+                    </div>
+
+
+                </div> 
+
+                <div class="copi">
+                    <p>Página realizada por Pilar Gonzalez &copy; 2022</p>
+                </div>
+        
+                
+          
+        </div>
+
+       
+       
+   
+</footer>
+
+<script src="/JS/carrito.js"></script>
+</body>
+
+</html>

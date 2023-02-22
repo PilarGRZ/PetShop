@@ -1,0 +1,66 @@
+@keyframes anime{
+
+    0%{
+        transform: translateY(-200%);
+    }
+
+    50%{
+
+        transform: translateX(0%);
+    }
+
+    75%{
+
+        transform: rotateZ(40deg);
+    }
+
+    80%{
+
+        transform: rotateZ(40deg);
+    
+    }
+
+    85%{
+
+        transform: rotateZ(-20deg);
+    }
+    
+    90%{
+
+        transform: rotateZ(-40deg);
+    }
+
+    94%{
+        transform: rotateZ(-40deg);
+
+    }
+
+    95%{
+
+        transform: translateX(0%);
+    }
+
+    96%{
+
+        transform: translatey(0%);
+    }
+
+    97%{
+         transform: translatey(0%);
+    }
+
+    98%{
+        transform: translateY(-2%);
+
+    }
+    99%{
+        transform: translateY(0%);
+
+    }
+
+    100%{
+
+        transform: translateY(0%);
+    }
+}
+

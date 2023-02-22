@@ -1,0 +1,1114 @@
+@font-face {
+    font-family: "pink";
+    src: url(/fonts/Qwertyos.free.ttf) format('woff2'),
+         url(/fonts/Cousine-Bold.ttf) format('woff');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+   
+    
+}
+
+body{
+
+    background: url(/img/paven.png);
+}
+
+header{
+
+    width: 100%; 
+    position: fixed;
+    background: url(/img/paven.png);
+ 
+}
+
+header #row{
+
+    
+    width: 80%;
+   display: grid;
+   grid-template-columns:repeat(7, 1fr); 
+   grid-template-rows: 1fr;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+#logo{
+   
+    width: 100%;
+}
+
+#logo img{
+    width: 80%;
+    margin: 5px;
+}
+
+#logo{
+
+    animation: anime 8s linear;
+    animation-iteration-count: initial;
+ 
+}
+
+#header nav{
+
+    grid-column: 2/5;
+}
+
+#header nav ul{ 
+
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'pink';
+    font-size: 10px;
+    list-style: none;
+    letter-spacing: 1px;    
+}
+
+#articulos{
+
+    margin-top: 100px;
+}
+
+#nav  ul  li a{
+
+    color: rgb(167, 100, 41);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px black;
+    letter-spacing: 3px;
+    font-size: 18px;
+ 
+    
+   
+}
+
+
+#nav  ul  li a:hover{
+
+
+    color: rgb(45, 134, 207);
+    text-shadow: 0px 0px 2px black inset;
+    transition: all 300ms;
+}
+
+
+
+#nav  ul  li:hover  ul  li:hover{
+    box-shadow: 0px 0px 5px rgba(136, 72, 13, 0.5) inset;
+
+}
+
+
+#nav  ul  li:hover  ul  li{
+
+    background-color: #f2f3f2;
+   
+}
+
+
+#nav  ul  li:hover  ul  li a{
+
+    list-style: none;   
+    font-weight: 100;
+    color: rgb(167, 100, 41);
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 5px;
+    text-transform: capitalize;
+    height: 25px;   
+}
+
+#nav  ul  li:hover  ul  li a:hover{
+
+    color: black;
+
+}
+
+#nav li a{
+
+    display: block;
+}
+
+#nav li ul{
+
+
+    display: none;
+    position: absolute;
+    min-width: 40px;
+}
+
+#nav li:hover > ul {
+
+    display: block;
+}
+
+#nav li ul li{
+
+    position: relative;
+    width: 132px;
+    padding: 5px;
+  
+}
+
+#nav li ul li ul{
+
+    left: -220px;
+    top: 0px;
+  
+}
+
+
+#nav  a span{
+
+    font-size: 10px;
+    float: right;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+
+#search{
+
+
+    
+    width: 85%;
+    grid-column: 5/7;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 4px #ccc inset;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px auto;
+    margin-top: -75px;
+    display: flex;
+    
+
+}
+
+#search input[type="text"]{
+
+width: 80%;
+height: 30px;
+border: transparent;
+border-radius: 5px;
+color: #ccc;
+padding-left: 8px;
+
+}
+
+#search input[type="text"]:focus{
+
+color: gray;
+}
+
+
+
+
+#search button{
+
+width: 15%;
+height: 30px;
+font-size: 16px;
+color: #555;
+background-color: transparent;
+border: none;
+border-left: 1px solid #ccc;
+padding-left: 6px;
+border-radius: 5px;
+
+}
+
+#search button i{
+
+color: rgb(71, 165, 182);
+font-size: 18px;
+
+}
+
+
+#header #carro{
+
+    grid-column: 7/8;
+    margin-top: 35px; 
+    
+    
+}
+
+#carro .submenu {
+
+    position: relative;
+    width: 10%;  
+    height: 45px;  
+    list-style: none;
+    margin-left: 200px;   
+
+}
+
+.submenu i{
+
+    font-size: 25px;
+    color: rgb(167, 100, 41);
+    cursor: pointer;
+
+}
+
+.submenu .contadorProductos{
+
+   position: absolute;
+   background-color: #ffff;
+   top: -10px;
+   color: rgb(45, 134, 207);
+   font-weight: bolder;
+   right: -13px;
+   border-radius: 50%;
+   font-size: 16px;
+   height: 20px;
+   width: 20px;
+   line-height: 20px;
+   box-shadow: 0px 0px 5px rgb(167, 100, 41);
+}
+
+.submenu i:hover{
+
+  color: rgb(45, 134, 207);
+  text-shadow: 0px 0px 1px black ;
+
+}
+
+.submenu #carrito{
+
+    display: none;
+    overflow-y: scroll;
+   
+}
+
+.submenu:hover #carrito{
+
+    display: block;
+    position: absolute;
+    background-color: #f2f3f2;
+    box-shadow: 0px 0px 2px #ccc ;
+    min-width: 500px;
+    height: 200px;
+    right: 0px; 
+    z-index: 1;
+    margin-top: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;  
+}
+
+
+.submenu:hover #carrito td{
+
+    border-bottom: 1px solid #ccc;
+    width: 50px;
+
+}
+
+.submenu:hover .borrar-producto{
+
+    font-size: 16px;
+    color: rgb(153, 35, 35);
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 1.5px black;
+}
+
+.submenu .precioProducto{
+     color: rgb(167, 100, 41);
+     font-family: 'pink';
+     font-size: 16px;
+     font-weight: bold;
+
+}
+
+.submenu .precioProducto span{
+
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#lista-carrito{
+
+   
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid #ccc; 
+}
+
+#lista-carrito > thead{
+
+
+    font-size: 13px;
+    font-family: "pink";
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    color: rgb(167, 100, 41);
+    font-weight: normal;
+    padding: 5px;
+
+}
+
+#carrito button{
+ 
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 5px;
+    margin-left: 35px;
+    border: 1px solid rgb(167, 100, 41);
+}
+
+#carrito button:hover{
+
+    box-shadow: 0px 0px 4px rgb(167, 100, 41) inset;
+}
+
+#carrito button a{
+
+    font-family: "pink";
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(45, 134, 207);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+#banner{
+
+    width: 100%;
+}
+
+#banner img{
+
+    
+    width: 100%;
+    height: 425px;
+    margin-top: 127px;
+    box-shadow: 1px 1px 2px #ccc;
+    image-rendering: crisp-edges;
+}
+
+#anuncio p{
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    font-family: 'pink';
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgb(167, 100, 41);
+    text-shadow: 1px 1px 1px black;
+}
+
+
+#anuncio p img{
+
+
+    width: 5px;
+
+}
+
+
+#barra{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 1px 1px #ccc inset;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  
+
+}
+
+#barra .servicio{
+
+    display: flex;
+    justify-content: center;
+   border-right: 1px solid #ccc;
+}
+
+#barra .servicio:last-child{
+
+    border-right: none;
+}
+
+.servicio h4{
+
+    font-family: 'pink';
+    font-weight: bold;
+
+}
+
+.servicio p{
+
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;    
+   margin-top: 5px;
+   font-size: 14px;
+   color: gray;
+}
+
+.servicio img{
+
+    width: 45px;
+    filter: opacity(0.5) drop-shadow( 0 0 rgb(23, 195, 226));
+    margin-right: 15px;
+  
+}
+
+section h4 {
+
+    width: 80%;
+    text-align: left;
+    margin: 0px auto;
+    font-family: 'pink';
+    font-size: 28px;
+    color: rgb(167, 100, 41);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black; 
+    padding-top: 60px;
+}
+
+section h2{
+
+    width: 80%;
+    text-align: left;
+    margin: 0px auto;
+    font-family: 'pink';
+    font-size: 30px;
+    color: rgb(167, 100, 41);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black; 
+    padding-top:30px;
+
+}
+
+.dibujo img{
+
+    width: 100%;
+    height: 200px;
+}
+
+
+#nosotros{
+
+   
+    padding-top: 50px;
+    width: 80%;
+    margin: 0px auto;
+
+}
+
+.dibujo img{
+
+    width: 100%;
+    margin-top: 150px;
+    height: 300px;
+
+
+}
+
+#mision{
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    
+}
+
+#mision .perrito{
+
+    text-align: center;
+    order: 2;
+   
+}
+
+#mision .perrito img{
+
+    width: 69%;
+    
+}
+#mision p{
+
+    order: 1;
+    text-align: center;
+    margin-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: gray;
+}
+
+#vision{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 80px;
+    height: auto;
+}
+
+#vision .gatico{
+
+  text-align: center;
+    order: 1;
+}
+
+#vision .gatico img{
+
+    margin-top: -150px;
+    width: 69%;
+    padding-top: 60px;
+   
+ 
+
+  }
+#vision p{
+
+    order: 2;
+    text-align: center;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+    
+    
+}
+
+.tituloMision{
+
+    margin-left: 200px;
+    color: rgb(167, 100, 41);
+    font-family: 'pink';
+    letter-spacing: 2px;
+
+}
+
+.tituloVision{
+
+    text-align: right;
+    margin-right: 250px;
+    margin-top: 50px;
+    color: rgb(167, 100, 41);
+    font-family: 'pink';
+    letter-spacing: 2px;
+
+}
+
+section .perros, .gatos, #masVendidosPerros, #masVendidosGatos{
+
+  
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+section .perros img,
+section .gatos img{
+
+width: 100%;
+height: 200px;
+}
+
+
+section .perros img:hover,
+section .gatos img:hover{
+
+   transform: scale(1.12);
+
+}
+
+
+section .accesorios, .card{
+
+   box-shadow: 0px 0px 2px #ccc ;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    grid-column-gap: 50px;
+    margin-top: 20px;
+
+}
+
+section .accesorios a{
+
+    text-decoration: none;
+}
+
+section .accesorios h3{
+
+
+    color: rgb(167, 100, 41);
+    font-weight: bolder;
+    text-decoration: none;  
+    font-family: 'pink';
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px black;
+    margin: 10px;
+}
+
+section .accesorios h3:hover{
+
+
+    color:rgb(45, 134, 207);
+}
+
+.accesorios .texto{
+
+    font-family:   Arial, Helvetica, sans-serif ;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+
+ 
+}
+
+#masVendidosPerros img,
+#masVendidosGatos img
+{
+    width: 100%;
+height: 200px;
+margin-bottom: 10px;
+
+}
+
+
+
+#masVendidosPerros .imge:hover,
+#masVendidosGatos .imge:hover{
+
+    transform: scale(1.12);
+
+}
+
+
+
+#masVendidosPerros .info-card,
+#masVendidosGatos .info-card{
+
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+    color: black;
+    text-shadow: 100;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+
+
+#masVendidosPerros .card .calificacion img,
+#masVendidosGatos .card .calificacion img{
+
+
+    width: 65px;
+    height: 15px;
+    transition: all 300ms;
+    margin-top: 10px;
+}
+
+
+
+#masVendidosPerros .card .precio,
+#masVendidosGatos .card .precio{
+
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.card a{
+
+    text-decoration: none;
+}
+
+.card a button{
+
+    width: 70%;
+    height: 35px;
+    border: 1px solid rgba(136, 72, 13, 0.5);
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px rgb(182, 182, 238) inset;
+   margin: 10px;
+   cursor: pointer;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   background-color: rgb(45, 134, 207);
+   color: white;
+   transition: all 300ms;
+
+
+}
+
+.card a button:hover{
+    background-color: rgb(143, 53, 11);
+    box-shadow: 1px 1px 1px 1px #ccc;
+    color: white;
+    
+}
+
+
+.card button a:hover{
+
+color: white;
+
+}
+
+
+.redes{
+
+    font-size: 100px;
+    color: rgb(45, 134, 207);
+
+}
+
+#footer{
+   width: 100%;
+    background-color: black;
+    margin-top: 50px;
+}
+
+footer .informacion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    grid-template-rows: 2fr;
+    gap: 20px;
+    width: 80%;
+    margin: 0px auto;
+    padding: 80px;
+    
+
+}
+
+
+footer  h3{
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color:white;
+    font-size: 16px;
+}
+
+footer .informacionGeneral ul{
+
+
+    padding: 5px;
+}
+
+footer .informacionGeneral ul li{
+
+    text-decoration: none;
+  
+    padding: 10px;
+    list-style: none;
+
+}
+
+footer .informacionGeneral ul li a{
+
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    transition: all 300ms;
+
+}
+
+
+footer .informacionGeneral ul li a:hover{
+
+color: rgb(45, 134, 207);
+text-shadow: 0px 0px 1px white inset;
+
+
+}
+
+
+footer .location iframe{
+
+
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+
+footer .redes{
+
+    width: 100%;
+   
+
+}
+
+.redes i{
+
+   font-size: 30px;
+    color: rgb(45, 134, 207);
+    margin-left: 24px;
+    transition: all 460ms;
+}
+
+.redes i:hover{
+
+    color: white;
+    text-shadow: 1px 1px 1px rgb(45, 134, 207);
+    transform: scale(1.5);
+
+}
+
+footer .copi{
+
+
+    grid-column: 1/5;
+    color: white;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 35px;
+
+}
+
+
+#email{
+
+    padding-top: 150px;
+    width: 70%;
+    margin: 0px auto;
+}
+
+
+#email h2{
+
+    text-align: left;
+    width: 75%;
+}
+
+#formulario{
+
+ 
+    width: 100%;
+    height: auto;
+   
+}
+
+
+#formulario .correo{
+
+
+width: 75%;
+margin: 0px auto;
+box-shadow: 0px 0px 5px grey;
+height: auto;
+margin-bottom: 100px;
+
+}
+
+#formulario label{
+
+    font-family: 'pink';
+    font-size: 18px;
+    display: block;
+    padding-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 8px;
+
+
+}
+
+#formulario input,
+#formulario textarea{
+
+  width: 95%;
+  margin: 5px;
+  height: 25px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+#formulario textarea{
+
+    height: 100px;
+}
+
+#formulario ::placeholder{
+
+    color: #aaa;
+    font-size: 15px;
+
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario textarea[type="text"]{
+
+    padding: 8px;
+}
+
+
+
+
+#formulario .otro{
+
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    
+}
+
+#formulario #botones{
+
+    width: 100%;
+    text-align: center;
+}
+
+#formulario #botones button{
+
+    width: 44%;
+    height: 40px;
+    font-family: 'pink';
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: rgb(45, 134, 207);
+    color: white;
+    box-shadow: 2px 2px 2px #f2f3f2;
+    border: none;
+    transition: all 300ms;
+    border-radius: 5px;
+    text-shadow: 0px 0px 5px black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 2px rgb(167, 100, 41);
+}
+
+#formulario #botones .enviar{
+
+    opacity: 0.5;
+    
+}
+
+#formulario #botones button:hover{
+    background-color: rgb(143, 53, 11);
+    box-shadow: 1px 1px 1px 1px #ccc;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.error,
+.exito{
+
+    width: 70%;
+    background-color: red;
+    color: white;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px rgb(167, 100, 41);
+}
+
+.exito{
+
+    background-color:rgb(49, 202, 49);
+    letter-spacing: 1px;
+}
+
+
+
+#alerta{
+
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    margin-top: 5px;
+
+}
+
+#menu, #menu-check{
+
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

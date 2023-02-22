@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="/CSS/animations.css" rel="stylesheet">
+   
+   <link href="/img/logo.jpg" rel="icon">
+    <title>Pet Shop</title>
+    <!-- JavaScript Bundle with Popper -->
+    <link href="/CSS/styles.css" rel="stylesheet">
+    <link href="/CSS/responsive.css" rel="stylesheet">
+    <link href="/CSS/responsive1.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2657d459f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div id="row">
+       
+               <div id="logo">
+                  <a href="/index.html"> <img src="/img/1.jpg" alt="pet"></a>
+               </div>
+               
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+                   <nav id="nav">
+                       <ul>
+                           <li>
+                               <a href="/index.html">Inicio</a>
+                           </li>
+                           <li>
+                               <a href="#">Productos <span>▼</span></a>
+                               <ul>
+                                   <li>
+                                       <a href="#">Perros <span>►</span></a>
+                                       <ul>
+                                           <li>
+                                               <a href="perrosComida.html">Comida</a>
+                                           </li>
+                                           <li>
+                                               <a href="perrosRopa.html">Ropa</a>
+                                           </li>
+                                           <li>
+                                               <a href="perrosCamas.html">Camas</a>
+                                           </li>
+                                           <li>
+                                               <a href="/perrosJuguetes.html">Juguetes</a>
+                                           </li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a href="#">Gatos <span>►</span></a>
+                                       <ul>
+                                           <li>
+                                               <a href="/gatosComida.html">Comida</a>
+                                           </li>
+                                           <li>
+                                               <a href="/gatosArena.html">Arenas</a>
+                                           </li>
+                                           <li>
+                                               <a href="/gastosRascador.html">Rascadores</a>
+                                           </li>
+                                           <li>
+                                               <a href="/gatosAccesorios.html">Accesorios</a>
+                                           </li>
+                                       </ul>
+                                   </li>
+       
+                               </ul>
+                           </li>
+       
+                           <li>
+                               <a href="/nosotros.html">Nosotros</a>
+                           </li>
+                           <li>
+                               <a href="/contacto.html">Contacto</a>
+                           </li>
+                       </ul>
+                   </nav>
+       
+                   <div id="carro">
+       
+                       <ul>
+                           <li class="submenu">
+                               <i class="fa-solid fa-cart-shopping"></i>
+                               <p class="contadorProductos">0</p>
+                               <div id="carrito">
+                                   <table id="lista-carrito">
+                                       <thead>
+                                           <tr>
+                                               <th>Producto</th>
+                                               <th>Nombre</th>
+                                               <th>Precio</th>
+                                               <th>Cantidad</th>
+                                               <th></th>
+                                           </tr>
+                                       </thead>
+                                       <tbody></tbody>
+       
+                                       
+                                   </table>
+                                   <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                                   <button><a href="#" id="vaciar-carrito">Vaciar Carrito</a></button>
+       
+                               </div>
+                           </li>
+                       </ul>
+       
+                   </div>
+                   <div id="search">
+       
+                       
+                       <input type="text" placeholder="Buscar...">
+                        <button aria-label="buscar" class="btnBuscar"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                       
+               </div>
+               </div>
+       
+       
+           </header>
+
+           <div class="dibujo">
+            <img src="/img/bannerrascador.jpg" alt="rascador">
+        </div>
+
+
+    <section class="listaProductos">
+
+
+
+        <h4>Rascadores para gatos :</h4>
+     
+         <section id ="masVendidosPerros">
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos17.avif" alt="producto1">
+        </div>
+            <div class="info-card">
+                <p>Rascador gato cama con juguete altura 41CM</p>
+              </div>
+
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>20.990</p>
+            </div>
+                <button class="btn" name="agregar" data-id="78"> Agregar al carrito</button>
+            </a>
+            </div>
+     
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos18.avif" alt="producto2">
+            </div>  
+            <div class="info-card">
+                <p>Torre rascador para gatos grande gris</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>53.990</p>
+            </div> 
+            <button class="btn" name="agregar" data-id="79"> Agregar al carrito</button>
+            </a>
+            
+        </div>
+
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos19.avif" alt="producto3">
+            </div>
+            <div class="info-card">
+                <p>Rascador torres</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>69.990</p>
+            </div>
+            <button class="btn" name="agregar" data-id="80"> Agregar al carrito</button>
+        </a>
+            
+        </div>
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos20.avif" alt="producto1">
+            </div>
+            <div class="info-card">
+                <p>Rascador samuel</p>
+
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+                </div>
+                <div class="precio">
+                    <span>$</span><p>64.990</p>
+            </div>
+            <button class="btn" name="agregar" data-id="81"> Agregar al carrito</button>
+        </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos21.avif" alt="producto1">
+        </div>
+            <div class="info-card">
+                <p>Rascador para gatos arco negro</p> 
+                </div>
+
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>10.900</p>
+            </div>
+                <button class="btn" name="agregar" data-id="82"> Agregar al carrito</button>
+            </a>
+            </div>
+     
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos22.avif" alt="producto2">
+            </div>  
+            <div class="info-card">
+                <p>Rascador colomba</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>79.990</p>
+            </div> 
+            <button class="btn" name="agregar" data-id="83"> Agregar al carrito</button>
+            </a>
+            
+        </div>
+
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos23.avif" alt="producto3">
+            </div>
+            <div class="info-card">
+                <p>Rascador de gato juguete interactivo</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+            </div>
+            <div class="precio">
+                <span>$</span><p>12.990</p>
+            </div>
+            <button class="btn" name="agregar" data-id="84"> Agregar al carrito</button>
+        </a>
+            
+        </div>
+
+        <div class="card">
+            <a href="#">
+            <div class="imge">
+           <img src="/img/productogatos24.avif" alt="producto1">
+            </div>
+            <div class="info-card">
+                <p>Torre rascador gatos casita arbol juguete rascador</p>
+            </div>
+                <div class="calificacion">
+                <img src="/img/estrellas.png" alt="estrellas" >
+                </div>
+                <div class="precio">
+                    <span>$</span><p>39.990</p>
+            </div>
+            <button class="btn" name="agregar" data-id="85"> Agregar al carrito</button>
+        </a>
+    </div>
+
+         </section>
+    </section>
+
+    <footer id="footer">
+        <div class="informacion">
+    
+        <div class="informacionGeneral">
+           <h3>INFORMACIÓN GENERAL</h3>
+    
+           <ul>
+            <li>
+                <a href="#">Preguntas frecuentes</a>
+            </li>
+            <li>
+                <a href="#">Derecho a retracto</a>
+            </li>
+            <li>
+                <a href="#">Terminos del servicio</a>
+            </li>
+            <li>
+                <a href="#">PQRS</a>
+            </li>
+            <li>
+                <a href="#">Politica de reembolso</a>
+            </li>
+           </ul>
+        </div>
+    
+        <div class="location">
+    
+            <h3>ESTAMOS LOCALIZADOS EN:</h3>
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7005331727632!2d-74.10410758595617!3d4.647403943413172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b954c7ea505%3A0xd28c94814b1d1633!2sCentro%20Comercial%20Gran%20Estaci%C3%B3n!5e0!3m2!1ses!2sco!4v1672250490832!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+        <div class="social">
+    
+            <h3>SÌGUENOS...</h3>
+    
+            <div class="redes">
+      
+                <a target="_blank" href="https://www.facebook.com" title="Facebook">
+                <i class="fa-brands fa-facebook"></i></a>
+    
+                <a target="_blank" href="https://www.twitter.com" title="twitter">
+                    <i class="fa-brands fa-twitter"></i></a>
+    
+                    <a target="_blank" href="https://www.instagram.com" title="instagram">
+                        <i class="fa-brands fa-instagram"></i></a>
+    
+                        <a target="_blank" href="https://www.youtube.com" title="youtube">
+                            <i class="fa-brands fa-youtube"></i></a>
+              
+                        </div>
+                    </div> 
+    
+                    <div class="copi">
+                        <p>Página realizada por Pilar Gonzalez &copy; 2022</p>
+                    </div>
+            
+            </div>
+       
+    </footer>
+
+
+    <script src="/JS/carrito.js"></script>
+
+
+ 
+</body>
+
+</html>
