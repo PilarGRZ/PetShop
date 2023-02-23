@@ -1,6 +1,6 @@
 # PetShop
-Este proyecto está creado con HTML, CSS, JavaScript. Aquí podrás encontrar una página de venta de artículos para tu mascota,
-puedes escoger y agregar tus productos al carrito de compras, también en el link de contacto podrás enviarnos un mensaje y contactarte con nosotros.
+Este proyecto está creado con HTML, CSS, JavaScript. Aquí podrá encontrar una página de venta de artículos para su mascota,
+puede escoger y agregar sus productos al carrito de compras, también en el link de contacto podrá enviarnos un mensaje y ponerse en contacto con nosotros.
 
 
 ##Autor:
