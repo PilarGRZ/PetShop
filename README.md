@@ -10,7 +10,7 @@ pilar gonzalez
 *[LinkedIn](https://www.linkedin.com/in/pilargrz/).
 
 
-##Ver ejemplo en vivo https://petshop94.netlify.app
+##Ver ejemplo en vivo  https://petshop94.netlify.app/
 
 
 ##Contratación:
